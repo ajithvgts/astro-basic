@@ -15,6 +15,7 @@ jobs:
           path: "dev"
 
       - name: Install dependencies
-        run: pnpm install
+        run: cd dev && pnpm install
+
       - name: Build
         run: pnpm run build
